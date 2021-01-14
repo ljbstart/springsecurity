@@ -14,7 +14,11 @@ import javax.validation.constraints.NotEmpty;
 @RequestMapping("/test")
 @Validated
 public class TestController {
-
+    /**
+     * 入门测试接口
+     * @param id
+     * @return
+     */
     @GetMapping("/testSecurity")
     public ResultObject testSecurity (@NotEmpty @RequestParam("id") String id){
         return new ResultObject(0,Md5Crypt.apr1Crypt(id.getBytes(),"123456"));
