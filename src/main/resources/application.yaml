@@ -1,2 +1,11 @@
 server:
   port: 8081
+
+spring:
+  #第一种配置用户名和密码的方式： 使用配置文件进行设置账户密码
+#  security:
+#    user:
+#      name: ljb
+#      password: 123456
+  main:
+    allow-bean-definition-overriding: true
